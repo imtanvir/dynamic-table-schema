@@ -3,42 +3,45 @@
   "code": 200,
   "message": "Machine data retrieved successfully!",
   "response": {
-    "count": 10,
-    "pagination": {
-      "previous": null,
-      "next": null
-    },
-    "data": [
+    "count": 100,
+    "previous": "api",
+    "next": "api",
+    "results": [
       {
         "machine_id": "STL-P/M-099",
         "model_number": "DDL-8700A",
         "serial_no": "45674",
+        "purchase_date": "2012-01-01",
         "status": "active",
         "line": {
           "id": "1",
           "name": "Line 1"
         },
         "category": {
-          "id": 1,
+          "id": "1",
           "name": "Sewing Machine"
         },
         "type": {
-          "id": 6,
+          "id": "6",
           "name": "Single Needle Lock Stitch Auto"
         },
         "brand": {
-          "id": 3,
+          "id": "3",
           "name": "Juki"
         },
         "company": {
-          "id": 1,
+          "id": "1",
           "name": "Company Name is here"
         },
         "operator": null,
         "active_breakdown_session": null,
-        "purchase_date": "2012-01-01"
+        "floor": null
       }
     ],
-    "hidden_fields": ["identifier", "category", "purchase_date"]
+    "hidden": [
+      "identifier",
+      "category",
+      "purchase_date"
+    ]
   }
 }
